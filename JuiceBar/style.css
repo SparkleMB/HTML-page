@@ -1,0 +1,48 @@
+*{
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+.nav-right{
+    color: black;
+}
+.nav-left{
+    color: black;
+}
+
+.head{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+#photoArray{
+    display: grid;
+    grid-gap:5em;
+    grid-template-areas:
+    "photoOne photoTwo"
+    " photoThree photoFour";
+    grid-template-columns: 20%, 20%;
+}
+
+#photoArray >div{
+    border:2px solid #eee
+}
+
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit]{
+    background-color: pink;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
